@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Lista</title>
+    <link rel="stylesheet" href="vp-adicionar-lista.css">
+    <script src="vp-adicionar-lista.js" defer></script>
+</head>
+
+<body>
+
+      <main class="tela-adicionar-lista">
+
+    <div class="cabecalho">
+        <a class="voltar" href="vp-escolha.html" aria-label="Voltar para a tela de escolha">‹</a>
+        <h1>Responsabilidades de um adulto</h1>
+    </div>
+
+    <div class="dados-lista">
+        <input class="campo-nome-lista" type="text" placeholder="Responsabilidade" aria-label="Nome da lista">
+
+        <div class="linha-data-lista">
+            <input class="campo-data" type="date" aria-label="Data para realizar">
+            <button class="botao-salvar" type="button">Salvar</button>
+            <button class="botao-limpar" type="button">Limpar</button>
+        </div>
+    </div>
+
+    <details class="secao-itens">
+        <summary>Adicionar itens ou ações? Clique aqui! </summary>
+
+        <div class="linha-novo-item">
+            <div class="campos-novo-item">
+                <input class="campo-item" type="text" placeholder="Digite um item ou ação" aria-label="Item ou ação">
+            </div>
+
+            <button class="botao-adicionar" type="button" aria-label="Adicionar item ou ação">+</button>
+        </div>
+
+        <ul class="lista-itens" aria-live="polite"></ul>
+    </details>
+
+    <a class="ver-lista" href="ver-lista.html"> Ver minhas listas </a>
+
+    </main>
+
+</body>
+
+</html>

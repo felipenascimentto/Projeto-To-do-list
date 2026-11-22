@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Lista</title>
+    <link rel="stylesheet" href="vp-addhobbies.css">
+    <script src="vp-addhobbies.js" defer></script>
+</head>
+<body>
+      <main class="tela-adicionar-lista">
+
+     <div class="cabecalho">
+    <a class="voltar" href="vp-escolha.html" aria-label="Voltar">‹</a>
+    <h1>Meus hobbies <img src="guitarra.png" alt="Ícone de guitarra" class="icone-titulo"></h1>
+    </div>
+      <input class="campo-nome-lista" type="text" placeholder="Nome da lista" aria-label="Nome da lista">
+      <div class="linha-novo-item">
+         <img src="bonecoaura.png" alt="Ícone de aura" class="icone-aura">
+      <div class="campos-novo-item">
+        <input class="campo-item" type="text" placeholder="Insira o seu hobbie😎" aria-label="Responsabilidade">
+        <input class="campo-data" type="date" aria-label="Data para realizar">
+    </div>
+    <button class="botao-adicionar" type="button" aria-label="Adicionar responsabilidade">+</button>
+</div>
+    <div class="linha-salvar">
+        <button class="botao-salvar" type="button">Salvar</button>
+        <button class="botao-limpar" type="button">Limpar</button>
+    </div>
+
+    <button type="button" class="botao-pasta">Lista de hobbies</button>
+    <ul class="lista-itens" hidden></ul>
+
+    <a class="ver-lista" href="ver-lista.html">Ver minhas listas</a>
+
+    </main>
+</body>
+</html>

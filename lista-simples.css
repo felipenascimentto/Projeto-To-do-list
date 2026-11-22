@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Excalifont";
+    src: url("Excalifont-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Excalifont", sans-serif;
+}
+
+.tela-lista {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    border: 2px solid #ccc;
+    border-radius: 40px;
+    padding: 24px;
+    width: min(900px, 90vw);
+    margin: 40px auto;
+    box-sizing: border-box;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    min-height: 380px;
+}
+
+.cabecalho {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voltar {
+    position: absolute;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.linha-novo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: min(600px, 100%);
+}
+
+.campos-novo-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+    padding: 8px 12px;
+    border: 2px solid #555;
+    border-radius: 12px;
+}
+
+.campo-item {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    font: inherit;
+}
+
+.campo-data {
+    width: 140px;
+    border: 0;
+    font: inherit;
+}
+
+.botao-adicionar {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    background: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.lista-itens {
+    list-style: none;
+    width: min(600px, 100%);
+    margin: 30px 0 0;
+    padding: 0;
+}
+
+.item-salvo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.detalhes-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex: 1;
+    min-height: 52px;
+    padding: 8px 12px;
+    border: 2px solid #555;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.botao-concluir {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    background: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.botao-excluir {
+    width: 32px;
+    height: 48px;
+    border: 0;
+    background: transparent;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* Tarefa concluída: texto riscado e mais claro. */
+.concluido .detalhes-item {
+    text-decoration: line-through;
+    color: #888;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js" defer></script>
+</head>
+<body>
+    <main class="tela-cadastro">
+
+        <div class="cabecalho">
+            <a class="voltar" href="card-principal.html" aria-label="Voltar para a tela inicial">‹</a>
+            <h1>Cadastro</h1>
+        </div>
+
+        <section id="contato">
+            <p id="mensagem-contato" role="status" aria-live="polite"></p>
+
+            <form>
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div>
+                    <label for="sugestao">Sua sugestão:</label>
+                    <textarea id="sugestao" name="sugestao" placeholder="Digite sua sugestão" rows="5"></textarea>
+                </div>
+
+                <fieldset class="opcoes">
+                    <legend>Como você conheceu nosso app?</legend>
+                    <label>
+                        <input type="radio" name="origem" value="amigos">
+                        Indicação de amigos
+                    </label>
+                    <label>
+                        <input type="radio" name="origem" value="redes">
+                        Redes sociais
+                    </label>
+                    <label>
+                        <input type="checkbox" name="selecao" value="novidades">
+                        Quero receber as novidades
+                    </label>
+                    <label>
+                        <input type="checkbox" name="selecao" value="aceito">
+                        Aceito os termos de uso
+                    </label>
+                </fieldset>
+
+                <button type="submit">Enviar Cadastro</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
